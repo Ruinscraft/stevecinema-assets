@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Steve Cinema - Snack Bar Menu</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap" rel="stylesheet"> 
+    <style>
+      *{
+        font-family: 'Raleway', sans-serif;
+        box-sizing: border-box;
+      }
+      
+      html{
+        font-size: 20pt;
+        line-height: 1.25em;
+      }
+      
+      body{
+      margin: 0;
+      padding: 0;
+      }
+      #menu-wrapper{
+        
+        width: 100%;
+        padding-top: 5%;
+        margin: 0;
+      }
+      article#menu{
+        width: 100%;
+        border: 8px dotted red;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #col-container{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      
+      .col{
+        display: inline-block;
+      }
+      
+      .col table{
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+      
+      thead td{
+        font-weight: bold;
+        text-decoration: solid underline red 4px;
+        text-align: center;
+        font-size: 1.6em;
+        letter-spacing: 0.1em;
+        height: 1.5em;
+      }
+      
+      tbody tr td:nth-child(2):before{
+        content: " ......... ";
+      }
+      tfoot{
+        font-size: 0.75em;
+      }
+      
+      #popcorn-img{
+        vertical-align: middle;
+        width: 60%;
+        margin-left: 20%;
+        filter: drop-shadow(8px 8px 3px rgba(0,0,0, 0.5));
+      }
+      
+      #img-helper{
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+  <div id="menu-wrapper">
+  <article id="menu">
+    <div id="col-container">
+    <section class="col">
+      <table>
+        <thead>
+          <tr>
+            <td colspan="2">DRINKS</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Diet Water</td>
+            <td>$2.75</td>
+          </tr>
+          <tr>
+            <td>Wocky Slush</td>
+            <td>$3.00</td>
+          </tr>
+          <tr>
+            <td>Kelp Shake</td>
+            <td>$3.50</td>
+          </tr>
+          <tr>
+            <td>Salt Water</td>
+            <td>$4.25</td>
+          </tr>
+          <tr>
+            <td>Bepis-Cola</td>
+            <td>$4.50</td>
+          </tr>
+          <tr>
+            <td>G-Fuel</td>
+            <td>$5.00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">No refills under perjury of law</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <section class="col">
+      <table>
+        <thead>
+          <tr>
+            <td colspan="2">SNACKS</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Canned Bread</td>
+            <td>$3.50</td>
+          </tr>
+          <tr>
+            <td>Bag of Rocks</td>
+            <td>$4.00</td>
+          </tr>
+          <tr>
+            <td>Ricecake</td>
+            <td>$4.50</td>
+          </tr>
+          <tr>
+            <td>Seasoned Dirt</td>
+            <td>$5.25</td>
+          </tr>
+          <tr>
+            <td>Boneless Pizza</td>
+            <td>$5.50</td>
+          </tr>
+          <tr>
+            <td>Soggy Lettuce</td>
+            <td>$6.25</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="col">
+      <span id="img-helper"></span><img id="popcorn-img" src="https://i.imgur.com/uya6TVY.png" alt="Popcorn Box">
+    </section>
+    <section class="col">
+      <table>
+        <thead>
+          <tr>
+            <td colspan="2">POPCORN</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Racist Popcorn</td>
+            <td>$3.50</td>
+          </tr>
+          <tr>
+            <td>Popcorn</td>
+            <td>$4.00</td>
+          </tr>
+          <tr>
+            <td>Damp Popcorn</td>
+            <td>$4.50</td>
+          </tr>
+          <tr>
+            <td>&quot;Just the Kernels&quot;</td>
+            <td>$5.25</td>
+          </tr>
+          <tr>
+            <td>Stale Popcorn</td>
+            <td>$5.50</td>
+          </tr>
+          <tr>
+            <td>Greasy Popcorn</td>
+            <td>$6.25</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Only $0.50 more for extra kernels</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <section class="col">
+      <table>
+        <thead>
+          <tr>
+            <td colspan="2">DESSERTS</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>QT Pies</td>
+            <td>$2.75</td>
+          </tr>
+          <tr>
+            <td>Dank Brownies</td>
+            <td>$3.50</td>
+          </tr>
+          <tr>
+            <td>Sugar-free Sugar</td>
+            <td>$4.00</td>
+          </tr>
+          <tr>
+            <td>Oops! Only Sugar</td>
+            <td>$5.25</td>
+          </tr>
+          <tr>
+            <td>Gummy Yeets</td>
+            <td>$5.50</td>
+          </tr>
+          <tr>
+            <td>Diabeetus XL</td>
+            <td>$6.00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    </div>
+  </article>
+  </div>
+  </body>
+</html>
